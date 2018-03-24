@@ -12,10 +12,13 @@
 		<header class="page-header clearfix">
 			<div class="container">
 				<div class="logo page-header__logo">
-					<img src="img/logo_hover.png" width="120" height="36" alt="Логотип AirPlanet">
+					<img class="visually-hidden" src="img/logo_hover.png" width="120" height="36" alt="Логотип AirPlanet">
+					<span class="logo__title">Компания AirPlanet</span>
 				</div>
 				<div class="contacts">
-					<p class="contacts__tel">8 (800) 00-392-10</p>
+					<p class="contacts__tel">
+						<a href="tel:+7-800-0039210">8 (800) 00-392-10</a>
+					</p>
 					<div class="contacts__timetable">
 						<p class="contacts__timetable-title">График работы</p>
 						<div class="contacts__timetable-popup">
@@ -26,23 +29,23 @@
 				</div>				
 			</div>
 		</header>
+		<aside class="container">
+			<nav class="main-navigation main-navigation_aside">
+				<ul class="main-navigation__list">
+					<li class="main-navigation__item main-navigation__item_active"><a class="main-navigation__index-link">Главная</a></li>
+					<li class="main-navigation__item"><a class="main-navigation__comments-link" href="">Отзывы</a></li>
+					<li class="main-navigation__item"><a class="main-navigation__team-link" href="">Экипаж</a></li>
+				</ul>
+			</nav>
+		</aside>
 		<main class="container clearfix">
-			<aside class="side-bar">
-				<nav class="main-navigation">
-					<ul class="main-navigation__list">
-						<li class="main-navigation__item main-navigation__item_current"><a class="main-navigation__index-link">Главная</a></li>
-						<li class="main-navigation__item"><a class="main-navigation__comments-link" href="">Отзывы</a></li>
-						<li class="main-navigation__item"><a class="main-navigation__team-link" href="">Экипаж</a></li>
-					</ul>
-				</nav>
-			</aside>
-			<section class="main-content main-content_index-page">
+			<section class="main-content main-content_about-page">
 				<div class="banner">
 					<div class="banner__airplane">
-						<img src="img/banner-image.png" width="619" height="299" alt="">
+						<img src="img/banner-image.png" width="619" height="299" alt="Промо-баннер компании AirPlanet">
 					</div>
 				</div>
-				<div class="tariffs">
+				<section class="tariffs">
 					<h2 class="section-title section-title_tariffs">Тарифы</h2>
 					<ul class="tariff-list">
 						<li class="tariffs__list-item">
@@ -76,13 +79,15 @@
 							<span class="tariffs__price"><sub>$</sub>99</span>
 						</li>
 					</ul>
-				</div>
-				<div class="news">
+				</section>
+				<section class="news">
 					<h2 class="section-title news__section-title">Последние новости</h2>
 					<ul class="news__list">
 						<li class="news__item">
 							<article class="news-article">
-								<img class="news-article__image" src="img/news-img1.jpeg" width="163" height="163" alt="Иллюстрация новости" >
+								<div class="news-article__image" style="background-image: url(img/news-img1.jpeg)">
+									<img class="visually-hidden" src="img/news-img1.jpeg" width="163" height="163" alt="Иллюстрация новости" >
+								</div>
 								<div class="news-article__content">
 									<div class="news-article__header">
 										<time class="news-article__news-date" datetime="12.10.2016">12.10.2016</time>
@@ -96,7 +101,9 @@
 						</li>
 						<li class="news__item">
 							<article class="news-article">
-								<img class="news-article__image" src="img/news-img2.jpeg" width="163" height="163" alt="Иллюстрация новости" >
+								<div class="news-article__image" style="background-image: url(img/news-img2.jpeg)">
+									<img class="visually-hidden" src="img/news-img2.jpeg" width="163" height="163" alt="Иллюстрация новости" >
+								</div>
 								<div class="news-article__content">
 									<div class="news-article__header">
 										<time class="news-article__news-date" datetime="01.02.2016">01.02.2016</time>
@@ -110,7 +117,9 @@
 						</li>
 						<li class="news__item">
 							<article class="news-article">
-								<img class="news-article__image" src="img/news-img3.jpeg" width="163" height="163" alt="Иллюстрация новости" >
+								<div class="news-article__image" style="background-image: url(img/news-img3.jpeg)">
+									<img class="visually-hidden" src="img/news-img3.jpeg" width="163" height="163" alt="Иллюстрация новости">
+								</div>
 								<div class="news-article__content">
 									<div class="news-article__header">
 										<time class="news-article__news-date" datetime="22.12.2015">22.12.2015</time>
@@ -142,33 +151,33 @@
 							<li><a class="paginator__next-link" href="">Вперёд</a></li>
 						</ul>
 					</div>
-				</div>				
+				</section>				
 			</section>
-		</main>
-		<footer class="page-footer">
-			<div class="container clearfix">
-				<div class="author">
-					<p>
-						Сделано с любовью и старанием <br> на курсе «HTML + CSS» в
-						<a href="//loftschool.com">LoftSchool</a>.
-					</p>
-					<p>Автор работы: <b>Ушачёв Виталий</b></p>
-				</div>				
-				<div class="social page-footer__social">
-					<span>Наши социальные сети</span>
-					<ul class="social__list">
-						<li><a class="social__vk" href="//vk.com/loftschool">ВКонтакте</a></li>
-						<li><a class="social__fb" href="//www.facebook.com/loftschool/">Фейсбук</a></li>
-						<li><a class="social__g-plus" href="#">Гугл+</a></li>
-						<li><a class="social__tw" href="//twitter.com/loftschool">Твиттер</a></li>
-						<li><a class="social__mail" href="mailto:info@loftschool.com">Электронная почта</a></li>
-					</ul>
-				</div>
-				<div class="logo page-footer__logo">
-					<img src="img/logo_hover.png" width="120" height="36" alt="Логотип AirPlanet">
-				</div>
-			</div>		
-		</footer>
+		</main>		
 	</div>
+	<footer class="page-footer">
+		<div class="container clearfix">
+			<div class="author">
+				<p>
+					Сделано с любовью и старанием <br> на курсе «HTML + CSS» в
+					<a href="//loftschool.com">LoftSchool</a>.
+				</p>
+				<p>Автор работы: <b>Ушачёв Виталий</b></p>
+			</div>				
+			<div class="social page-footer__social">
+				<span>Наши социальные сети</span>
+				<ul class="social__list">
+					<li><a class="social__vk" href="//vk.com/loftschool">ВКонтакте</a></li>
+					<li><a class="social__fb" href="//www.facebook.com/loftschool/">Фейсбук</a></li>
+					<li><a class="social__g-plus" href="#">Гугл+</a></li>
+					<li><a class="social__tw" href="//twitter.com/loftschool">Твиттер</a></li>
+					<li><a class="social__mail" href="mailto:info@loftschool.com">Электронная почта</a></li>
+				</ul>
+			</div>
+			<div class="logo page-footer__logo">
+				<img class="visually-hidden" src="img/logo_hover.png" width="120" height="36" alt="Логотип AirPlanet">
+			</div>
+		</div>		
+	</footer>
 </body>
 </html>
