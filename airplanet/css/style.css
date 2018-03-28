@@ -7,6 +7,7 @@ body {
 	line-height: 30px;
 	color: #221f1f;
 	font-family: 'Roboto', 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
@@ -43,9 +44,9 @@ body {
 	overflow: hidden;
 }
 
-.logo:hover img {
+/*.logo:hover img {
 	visibility: visible;
-} 
+} */
 
 .page-header__logo {
 	float: left;
@@ -88,6 +89,14 @@ body {
 	cursor: pointer;
 }
 
+.contacts__timetable-title::before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 36px;
+}
+
 .contacts__timetable-title:hover {
 	opacity: 1;
 }
@@ -113,7 +122,8 @@ body {
 
 .contacts__timetable-title:hover
 +
-.contacts__timetable-popup {
+.contacts__timetable-popup,
+.contacts__timetable-popup:hover {
 	visibility: visible;
 }
 
@@ -137,13 +147,9 @@ body {
 
 /*================боковая панель==============*/
 
-.main-navigation {
+.side-bar {
 	float: left;
 	width: 170px;
-	vertical-align: top;
-}
-
-.main-navigation_aside {
 	margin-top: 31px;	
 }
 
@@ -153,12 +159,7 @@ body {
 	list-style: none;
 }
 
-.main-navigation__item {
-	margin-left: 36px;
-}
-
 .main-navigation__item a {
-	position: relative;
 	font-size: 12px;
 	line-height: 49px;
 	font-weight: bold;
@@ -173,27 +174,26 @@ body {
 }
 
 .main-navigation__item a::before {
-	position: absolute;
 	content: "";
-	display: block;
+	display: inline-block;
 	width: 25px;
     height: 20px;
-    top: -3px;
-    left: -36px;
+    vertical-align: -5px;
+    margin-right: 11px;
     background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
 }
 
 .main-navigation__index-link::before {
-	background-position: -176px -10px;
+	background-position: -20px -251px;
 }
 
 .main-navigation__comments-link::before {
-	background-position: -10px -10px;
+	background-position: -20px -20px;
 }
 
 .main-navigation__team-link::before {
-	background-position: -90px -10px;
+	background-position: -20px -135px;
 }
  
 .main-navigation__comments-link:hover {
@@ -201,7 +201,7 @@ body {
 }
 
 .main-navigation__comments-link:hover::before {
-	background-position: -50px -10px;
+	background-position: -20px -78px;
 }
 
 .main-navigation__team-link:hover {
@@ -209,7 +209,7 @@ body {
 }
 
 .main-navigation__team-link:hover::before {
-	background-position: -133px -10px;
+	background-position: -20px -193px;
 }
 
 /*===============основное содержание===============*/
@@ -224,15 +224,15 @@ body {
 	margin-bottom: 46px;
 }
 
-.banner {
+.promo-image {
 	position: relative;
 	width: 900px;
 	height: 299px;
-	background: url("../img/banner-bg.jpg") no-repeat center;
+	background: url("../img/promo-bg.jpg") no-repeat center;
 	overflow: hidden;
 }
 
-.banner__airplane {
+.promo-image__animated-block {
 	position: absolute;
 	top: 3px;
 	right: -105px;
@@ -253,16 +253,15 @@ body {
 }
 
 .section-title_tariffs {
-	margin-left: -7px; /* дичь макета :( */
 	margin-bottom: 30px;
 }
 
-.tariff-list {
+.tariffs__list {
 	padding: 0;
 	margin: 0;
 }
 
-.tariffs__list-item {
+.tariffs__item {
 	position: relative;
 	display: inline-block;
 	margin-right: 15px;
@@ -271,44 +270,43 @@ body {
 	vertical-align: top;
 	box-sizing: border-box;
 	border: 1px solid transparent;
-
 	border-radius: 5px;
 	padding: 41px 25px 39px;
 	text-align: center;
 }
 
-.tariffs__list-item:hover {
+.tariffs__item:hover {
 	border-color: #e8e9ed;
 }
 
-.tariffs__list-item::before {
+.tariffs__item::before {
 	position: absolute;
 	content: "";
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 34px;
+	height: 34px;
 	top: 40px;
 	left: 50%;
-	margin-left: -36px;
+	margin-left: -35px;
 	background-color: #4b73b5;
-	border: 20px solid #4b73b5;
+	border: 18px solid #4b73b5;
 	border-radius: 50%;
 	background: #4b73b5 url("../img/spritesheet.png") no-repeat;
 }
 
-.tariffs__list-item:nth-of-type(1)::before {
-	background-position: -404px -10px;
+.tariffs__item_standart::before {
+	background-position: -16px -613px;
 }
 
-.tariffs__list-item:nth-of-type(2)::before {
-	background-position: -454px -13px;
+.tariffs__item_premium::before {
+	background-position: -19px -686px;
 }
 
-.tariffs__list-item:nth-of-type(3)::before {
-	background-position: -503px -9px;
+.tariffs__item_luxary::before {
+	background-position: -17px -755px;
 }
 
-.tariffs__tariff-title {
+.tariffs__title {
 	margin-top: 102px;
 	margin-bottom: 16px;
 	font-size: 11px;
@@ -375,7 +373,7 @@ body {
 .news__list {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 18px;
+	margin-bottom: 19px;
 	list-style: none;
 }
 
@@ -436,49 +434,57 @@ body {
 	line-height: 25px;
 }
 
+.paginator__indicator,
+.paginator__prev-link,
+.paginator__next-link,
+.paginator__list,
+.paginator__item {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
 .paginator__indicator {
 	padding-right: 13px;
 	margin-left: 273px;
 	font-weight: lighter;
 	color: #656464;
-	vertical-align: -2px;
+	/*vertical-align: -2px;*/
 }
 
-.paginator__page-list {
-	display: inline-block;
+.paginator__list {
 	padding: 0;
-	vertical-align: middle;
 	list-style: none;
 	font-weight: bold;
 	text-align: center;
 }
 
-.paginator__page-list li {
-	display: inline-block;
-	vertical-align: middle;
+.paginator__item {
 	width: 25px;
 	height: 25px;
-	margin-left: -3.4px;
+	margin-left: -3.3px;
 }
 
-.paginator__page-list li:first-child {
-	margin-left: 0;
+.paginator__item:first-child {
+	/*margin-left: 0;*/
 }
 
-.paginator__page-list a {
+.paginator__link {
 	display: block;
 	text-decoration: none;
 	color: inherit;
 }
 
-.paginator__page-list a:not([class$="current-link"]):hover {
+.paginator__link:not([class$="current-link"]):hover {
 	color: #1c5bc3;
 }
 
 .paginator__prev-link,
 .paginator__next-link {
 	position: relative;
+	width: 25px;
+	height: 25px;
 	text-indent: -3000px;
+	/*background-color: pink;*/
 }
 
 .paginator__prev-link::before,
@@ -495,18 +501,22 @@ body {
 }
 
 .paginator__prev-link::before {
-	transform: translateX(-3px) rotate(45deg);
+	transform: translateX(-2px) rotate(45deg);
 }
 
 .paginator__next-link::before {
-	transform: translateX(-2px) rotate(-135deg);
+	transform: translateX(-6px) rotate(-135deg);
 }
 
-.paginator__prev-link_disabled {
+.link_disabled {
+	pointer-events: none;
+	cursor: default;
 	opacity: 0.3;
 }
 
-a.paginator__current-link {
+.paginator__current-link {
+	pointer-events: none;
+	cursor: default;
 	color: #fff;
 	background-color: #1c5bc3;
 	border-radius: 4px;
@@ -552,6 +562,7 @@ a.paginator__current-link {
 
 .page-footer__col3 {
 	min-width: 155px;
+	max-width: 33%;
 }
 
 .page-footer__social {
@@ -568,19 +579,19 @@ a.paginator__current-link {
 	list-style: none;
 }
 
-.social__list li {
+.social__item {
 	display: inline-block;
 	width: 20px;
 	margin-right: 6.5px;
 }
 
-.social__list a {
+.social__link {
 	position: relative;
 	display: block;
 	text-indent: -3000px;
 }
 
-.social__list a::before {
+.social__link::before {
 	position: absolute;
 	content: "";
 	display: block;
@@ -592,27 +603,27 @@ a.paginator__current-link {
 	border-radius: 50%;
 }
 
-.social__list .social__vk::before {
-	background-position: -370px -4px;
+.social__vk::before {
+	background-position: -16px -562px;
 }
 
-.social__list .social__fb::before {
-	background-position: -243px -6px;
+.social__fb::before {
+	background-position: -13px -365px;
 }
 
-.social__list .social__g-plus::before {
-	background-position: -273px -4px;
+.social__g-plus::before {
+	background-position: -17px -416px;
 }
 
-.social__list .social__tw::before {
-	background-position: -338px -4px;
+.social__tw::before {
+	background-position: -15px -514px;
 }
 
-.social__list .social__mail::before {
-	background-position: -307px -5px;
+.social__mail::before {
+	background-position: -16px -465px;
 }
 
-.social__list a:hover::before {
+.social__link:hover::before {
 	background-color: #fff;
 }
 

@@ -29,27 +29,33 @@
 				</div>				
 			</div>
 		</header>
-		<aside class="container">
-			<nav class="main-navigation main-navigation_aside">
-				<ul class="main-navigation__list">
-					<li class="main-navigation__item main-navigation__item_active"><a class="main-navigation__index-link">Главная</a></li>
-					<li class="main-navigation__item"><a class="main-navigation__comments-link" href="">Отзывы</a></li>
-					<li class="main-navigation__item"><a class="main-navigation__team-link" href="">Экипаж</a></li>
-				</ul>
-			</nav>
-		</aside>
-		<main class="container clearfix">
-			<section class="main-content main-content_about-page">
-				<div class="banner">
-					<div class="banner__airplane">
-						<img src="img/banner-image.png" width="619" height="299" alt="Промо-баннер компании AirPlanet">
+		<div class="container clearfix">
+			<aside class="side-bar">
+				<nav class="main-navigation">
+					<ul class="main-navigation__list">
+						<li class="main-navigation__item main-navigation__item_active">
+							<a class="main-navigation__index-link">Главная</a>
+						</li>
+						<li class="main-navigation__item">
+							<a class="main-navigation__comments-link" href="">Отзывы</a>
+						</li>
+						<li class="main-navigation__item">
+							<a class="main-navigation__team-link" href="">Экипаж</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<main class="main-content main-content_about-page">
+				<div class="promo-image">
+					<div class="promo-image__animated-block">
+						<img src="img/promo-image.png" width="619" height="299" alt="Промо-баннер компании AirPlanet">
 					</div>
 				</div>
 				<section class="tariffs">
 					<h2 class="section-title section-title_tariffs">Тарифы</h2>
-					<ul class="tariff-list">
-						<li class="tariffs__list-item">
-							<h3 class="tariffs__tariff-title">Стандарт</h3>
+					<ul class="tariffs__list">
+						<li class="tariffs__item tariffs__item_standart">
+							<h3 class="tariffs__title">Стандарт</h3>
 							<p class="tariffs__description">Создан для вашего комфортного отдыха</p>
 							<ul class="tariffs__features">
 								<li>Питание включено</li>
@@ -58,8 +64,8 @@
 							</ul>
 							<span class="tariffs__price"><sub>$</sub>19</span>
 						</li>
-						<li class="tariffs__list-item">
-							<h3 class="tariffs__tariff-title">Премиум</h3>
+						<li class="tariffs__item tariffs__item_premium">
+							<h3 class="tariffs__title">Премиум</h3>
 							<p class="tariffs__description">Для любителей хороших впечатлений</p>
 							<ul class="tariffs__features">
 								<li>Питание включено</li>
@@ -68,8 +74,8 @@
 							</ul>
 							<span class="tariffs__price"><sub>$</sub>39</span>
 						</li>
-						<li class="tariffs__list-item">
-							<h3 class="tariffs__tariff-title">Лакшери</h3>
+						<li class="tariffs__item tariffs__item_luxary">
+							<h3 class="tariffs__title">Лакшери</h3>
 							<p class="tariffs__description">Всё самое лучшее <br> и незабываемое</p>
 							<ul class="tariffs__features">
 								<li>Питание включено</li>
@@ -135,25 +141,39 @@
 					<div class="paginator">
 						<span class="paginator__indicator">
 							Страница
-							<span class="paginator__indicator-current-page">1</span>
+							<span class="paginator__current-page">1</span>
 							из
-							<span class="paginator__indicator-total-page">7</span>
+							<span class="paginator__total-page">7</span>
 						</span>
-						<ul class="paginator__page-list">
-							<li><a class="paginator__prev-link paginator__prev-link_disabled" href="">Назад</a></li>
-							<li><a class="paginator__current-link">1</a></li>
-							<li><a href="">2</a></li>
-							<li><a href="">3</a></li>
-							<li><a href="">4</a></li>
-							<li><a href="">5</a></li>
-							<li><a href="">6</a></li>
-							<li><a href="">7</a></li>
-							<li><a class="paginator__next-link" href="">Вперёд</a></li>
+						<a class="paginator__prev-link link_disabled" href="">Назад</a>
+						<ul class="paginator__list">
+							<li class="paginator__item">
+								<a class="paginator__link paginator__current-link" href="">1</a>
+							</li>
+							<li class="paginator__item">
+								<a class="paginator__link" href="">2</a>
+							</li>
+							<li class="paginator__item">
+								<a class="paginator__link" href="">3</a>
+							</li>
+							<li class="paginator__item">
+								<a class="paginator__link" href="">4</a>
+							</li>
+							<li class="paginator__item">
+								<a class="paginator__link" href="">5</a>
+							</li>
+							<li class="paginator__item">
+								<a class="paginator__link" href="">6</a>
+							</li>
+							<li class="paginator__item">
+								<a class="paginator__link" href="">7</a>
+							</li>
 						</ul>
+						<a class="paginator__next-link" href="">Вперёд</a>
 					</div>
 				</section>				
-			</section>
-		</main>		
+			</main>	
+		</div>	
 	</div>
 	<footer class="page-footer">
 		<div class="container clearfix">
@@ -172,11 +192,21 @@
 			<div class="social page-footer__social page-footer__col3">
 				<span>Наши социальные сети</span>
 				<ul class="social__list">
-					<li><a class="social__vk" href="//vk.com/loftschool">ВКонтакте</a></li>
-					<li><a class="social__fb" href="//www.facebook.com/loftschool/">Фейсбук</a></li>
-					<li><a class="social__g-plus" href="#">Гугл+</a></li>
-					<li><a class="social__tw" href="//twitter.com/loftschool">Твиттер</a></li>
-					<li><a class="social__mail" href="mailto:info@loftschool.com">Электронная почта</a></li>
+					<li class="social__item">
+						<a class="social__link social__vk" href="//vk.com/loftschool">ВКонтакте</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__fb" href="//www.facebook.com/loftschool/">Фейсбук</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__g-plus" href="#">Гугл+</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__tw" href="//twitter.com/loftschool">Твиттер</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__mail" href="mailto:info@loftschool.com">Электронная почта</a>
+					</li>
 				</ul>
 			</div>			
 		</div>		
