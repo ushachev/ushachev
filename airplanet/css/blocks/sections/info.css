@@ -1,0 +1,30 @@
+.container_info {
+	width: 640px;
+}
+
+.info {
+	background: #4bb56b url("../img/pattern.jpg") repeat center;
+	margin-bottom: 58px;
+}
+
+.info__content {
+	padding: 41px 15px 39px 0;
+	margin: 0;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: lighter;
+	color: #fff;
+}
+
+.info__content a {
+	font-weight: bold;
+	color: inherit;
+}
+
+.info__tel {
+	text-decoration: none;
+}
+
+.info__tel:hover {
+	text-decoration: underline;
+}

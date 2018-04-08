@@ -1,0 +1,17 @@
+.promo-image {
+	position: relative;
+	width: 900px;
+	height: 299px;
+	background: url("../../../img/promo-bg.jpg") no-repeat center;
+	overflow: hidden;
+}
+
+.promo-image__animated-block {
+	position: absolute;
+	top: 3px;
+	top: -20px;
+	right: -105px;
+	right: -620px;
+	transform-origin: right bottom;
+	animation: flight 2s forwards 0.3s;
+}

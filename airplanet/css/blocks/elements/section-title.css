@@ -1,0 +1,14 @@
+.section-title {
+	margin: 0;
+	font-size: 49px;
+	line-height: 49px;
+	font-weight: bold;
+}
+
+.section-title_comments {
+	margin-bottom: 12px;
+}
+
+.section-title_team {
+	margin-bottom: 32px;
+}

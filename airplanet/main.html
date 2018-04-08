@@ -3,20 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- <meta name="viewport" content="width=1100, initial-scale=1.0"> -->
-	<title>AirPlanet</title>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#ffffff">
+	<!-- end favicon -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/general.css">
+	<title>AirPlanet Главная</title>
 </head>
 <body class="page-with-sticky-footer">
 	<div class="wrapper">
 		<header class="page-header clearfix">
 			<div class="container">
 				<div class="logo page-header__logo">
-					<img class="visually-hidden" src="img/logo_hover.png" width="120" height="36" alt="Логотип AirPlanet">
-					<span class="logo__title">Компания AirPlanet</span>
+					<a href="index.html"><img class="visually-hidden" src="img/logo_hover.png" width="120" height="36" alt="Логотип AirPlanet"></a>
+					<h1 class="logo__title">Компания AirPlanet</h1>
 				</div>
-				<div class="contacts">
+				<address class="contacts">
 					<a class="contacts__tel" href="tel:+7-800-0039210">8 (800) 00-392-10</a>
 					<div class="contacts__timetable">
 						<span class="contacts__timetable-title">График работы</span>
@@ -25,7 +35,7 @@
 							<span>обед: 14:00-14:30</span>
 						</div>
 					</div>
-				</div>				
+				</address>				
 			</div>
 		</header>
 		<div class="container clearfix">
@@ -39,7 +49,7 @@
 							<a class="main-navigation__comments-link" href="comments.html">Отзывы</a>
 						</li>
 						<li class="main-navigation__item">
-							<a class="main-navigation__team-link" href="">Экипаж</a>
+							<a class="main-navigation__team-link" href="team.html">Экипаж</a>
 						</li>
 					</ul>
 				</nav>
@@ -50,7 +60,7 @@
 						<img src="img/promo-image.png" width="619" height="299" alt="Промо-баннер компании AirPlanet">
 					</div>
 				</div>
-				<section class="tariffs">
+				<section class="tariffs tariffs_main-page">
 					<h2 class="section-title section-title_tariffs">Тарифы</h2>
 					<ul class="tariffs__list">
 						<li class="tariffs__item tariffs__item_standart">
@@ -85,13 +95,13 @@
 						</li>
 					</ul>
 				</section>
-				<section class="news">
+				<section class="news news_main-page">
 					<h2 class="section-title news__section-title">Последние новости</h2>
 					<ul class="news__list article-list">
 						<li class="article-list__item">
 							<article class="article clearfix">
-								<div class="article__image" style="background-image: url(img/news-img1.jpeg)">
-									<img class="visually-hidden" src="img/news-img1.jpeg" width="163" height="163" alt="Иллюстрация новости" >
+								<div class="article__image" style="background-image: url(img/news/news-img1.jpeg)">
+									<img class="visually-hidden" src="img/news/news-img1.jpeg" width="163" height="163" alt="Иллюстрация новости" >
 								</div>
 								<div class="article__content">
 									<div class="article__header">
@@ -106,8 +116,8 @@
 						</li>
 						<li class="article-list__item">
 							<article class="article clearfix">
-								<div class="article__image" style="background-image: url(img/news-img2.jpeg)">
-									<img class="visually-hidden" src="img/news-img2.jpeg" width="163" height="163" alt="Иллюстрация новости" >
+								<div class="article__image" style="background-image: url(img/news/news-img2.jpeg)">
+									<img class="visually-hidden" src="img/news/news-img2.jpeg" width="163" height="163" alt="Иллюстрация новости" >
 								</div>
 								<div class="article__content">
 									<div class="article__header">
@@ -122,8 +132,8 @@
 						</li>
 						<li class="article-list__item">
 							<article class="article clearfix">
-								<div class="article__image" style="background-image: url(img/news-img3.jpeg)">
-									<img class="visually-hidden" src="img/news-img3.jpeg" width="163" height="163" alt="Иллюстрация новости" >
+								<div class="article__image" style="background-image: url(img/news/news-img3.jpeg)">
+									<img class="visually-hidden" src="img/news/news-img3.jpeg" width="163" height="163" alt="Иллюстрация новости" >
 								</div>
 								<div class="article__content">
 									<div class="article__header">
@@ -185,7 +195,7 @@
 			</div>
 			<div class="page-footer__col2">
 				<div class="logo page-footer__logo">
-					<img class="visually-hidden" src="img/logo_hover.png" width="120" height="36" alt="Логотип AirPlanet">
+					<a href="index.html"><img class="visually-hidden" src="img/logo_hover.png" width="120" height="36" alt="Логотип AirPlanet"></a>
 				</div>
 			</div>				
 			<div class="social page-footer__social page-footer__col3">

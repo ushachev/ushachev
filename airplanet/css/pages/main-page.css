@@ -1,0 +1,13 @@
+.content_main-page {
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+.tariffs_main-page {
+	margin-top: 14px;
+	margin-bottom: 54px;
+}
+
+.news_main-page {
+	margin-left: -5px; /* нестыковка макета */
+}

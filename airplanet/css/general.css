@@ -1,0 +1,38 @@
+/*layout settings*/
+@import url("global/base.css");
+@import url("global/animate_airpl.css");
+@import url("global/icon-font.css");
+
+/*sections*/
+@import url("blocks/layout/header.css");
+@import url("blocks/layout/footer.css");
+@import url("blocks/layout/sidebar.css");
+@import url("blocks/layout/content.css");
+/*=======================================*/
+@import url("blocks/sections/tariffs.css");
+@import url("blocks/sections/news.css");
+@import url("blocks/sections/comments.css");
+@import url("blocks/sections/info.css");
+@import url("blocks/sections/comment.css");
+@import url("blocks/sections/team.css");
+@import url("blocks/sections/partner.css");
+/*========================================*/
+@import url("blocks/elements/logo.css");
+@import url("blocks/elements/contacts.css");
+@import url("blocks/elements/main-navigation.css");
+@import url("blocks/elements/promo.css");
+@import url("blocks/elements/section-title.css");
+@import url("blocks/elements/article.css");
+@import url("blocks/elements/article-list.css");
+@import url("blocks/elements/paginator.css");
+@import url("blocks/elements/social.css");
+@import url("blocks/elements/breadcrumbs.css");
+@import url("blocks/elements/form-comment.css");
+@import url("blocks/elements/btn.css");
+
+/*pages*/
+/*index*/
+@import url("pages/index-page.css");
+/*main*/
+@import url("pages/main-page.css");
+

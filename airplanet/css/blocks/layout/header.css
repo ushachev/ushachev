@@ -1,0 +1,9 @@
+.page-header {
+	color: #fff;
+	background-color: #4b73b5;
+}
+
+.page-header__logo {
+	float: left;
+	margin-top: 20px;
+}

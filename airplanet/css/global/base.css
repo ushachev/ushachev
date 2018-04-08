@@ -1,0 +1,45 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 18px;
+	font-weight: lighter;
+	color: #221f1f;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.page-with-sticky-footer {
+	display: table;
+	width: 100%;	
+}
+
+.wrapper {
+	display: table-row;
+	min-width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.container {
+	width: 1060px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.visually-hidden {
+	visibility: hidden;
+}
+
+.link_disabled {
+	pointer-events: none;
+	cursor: default;
+	opacity: 0.3;
+}

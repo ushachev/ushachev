@@ -1,0 +1,40 @@
+.article__image {
+	float: left;
+	width: 163px;
+	height: 163px;
+	margin-top: 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.article__content {
+	margin-left: 180px;
+}
+
+.article__header {
+	margin-bottom: 9px;
+}
+
+.article__date {
+	font-size: 14px;
+	font-weight: lighter;
+	color: #656464;
+}
+
+.article__title {
+	margin: 0;
+	padding-top: 6px;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.article__text {
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	font-weight: lighter;
+}

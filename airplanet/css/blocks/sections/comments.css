@@ -1,0 +1,12 @@
+.article-list.comments__list {
+	margin-bottom: 16px;
+}
+
+.comments__paginator {
+	margin-left: 219px;
+}
+
+.article__image_comments {
+	width: 160px;
+	height: 160px;
+}

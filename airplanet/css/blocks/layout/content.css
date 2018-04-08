@@ -1,0 +1,9 @@
+.content {
+	float: right;
+	width: 880px;
+}
+
+.content_inner-page {
+	margin-top: 45px;
+	margin-bottom: 64px;
+}

@@ -1,0 +1,25 @@
+.btn {
+	height: 45px;
+	border: 1px solid;
+	border-radius: 3px;
+	line-height: 45px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.btn_transition {
+	transition: color 0.2s, background-color 0.7s;
+}
+
+.btn__title::after {
+	display: inline;
+	width: 15px;
+	font-family: 'icomoon';
+	content: "\e901";
+	padding-left: 12px;
+	font-weight: normal;
+	font-size: 14px;
+	vertical-align: -4%;
+}

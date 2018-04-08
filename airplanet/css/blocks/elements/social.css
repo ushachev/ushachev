@@ -1,0 +1,59 @@
+.social {
+	display: table;
+	font-weight: bold;
+}
+
+.social__list {
+	margin: 0;
+	padding: 0;
+	padding-top: 6px;
+	list-style: none;
+}
+
+.social__item {
+	display: inline-block;
+	width: 20px;
+	margin-right: 6.5px;
+}
+
+.social__link {
+	position: relative;
+	display: block;
+	text-indent: -3000px;
+}
+
+.social__link::before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	left: 0;
+	background: #d2def3 url("../../../img/spritesheet.png") no-repeat;
+	border-radius: 50%;
+}
+
+.social__vk::before {
+	background-position: -16px -562px;
+}
+
+.social__fb::before {
+	background-position: -13px -365px;
+}
+
+.social__g-plus::before {
+	background-position: -17px -416px;
+}
+
+.social__tw::before {
+	background-position: -15px -514px;
+}
+
+.social__mail::before {
+	background-position: -16px -465px;
+}
+
+.social__link:hover::before {
+	background-color: #fff;
+}

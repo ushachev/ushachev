@@ -1,0 +1,48 @@
+.page-footer {
+	padding: 12px 0 9px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	background-color: #4b73b5;
+}
+
+.page-footer__col1 {
+	float: left;
+	width: 33%;
+}
+
+.page-footer__col2 {
+	float: left;
+	width: 34%;
+}
+.page-footer__col3 {
+	float: right;
+	min-width: 155px;
+	max-width: 33%;
+}
+
+.page-footer__social {
+	margin-top: 5px;
+}
+
+.page-footer__logo {
+	margin: 8px auto 0;
+}
+
+.author {
+	font-weight: lighter;
+}
+
+.author p {
+	margin: 0;
+}
+
+.author a {
+	font-weight: bold;
+	color: inherit;
+	text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+
+.author b {
+	font-weight: bold;
+}

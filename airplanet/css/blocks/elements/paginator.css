@@ -1,0 +1,80 @@
+.paginator {
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.paginator__indicator,
+.paginator__prev-link,
+.paginator__next-link,
+.paginator__list,
+.paginator__item {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.paginator__indicator {
+	padding-right: 13px;
+	font-weight: lighter;
+	color: #656464;
+}
+
+.paginator__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-weight: bold;
+	text-align: center;
+}
+
+.paginator__item {
+	width: 25px;
+	height: 25px;
+	margin-left: -3.3px;
+}
+
+.paginator__link {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.paginator__link:not([class$="current-link"]):hover {
+	color: #1c5bc3;
+}
+
+.paginator__prev-link,
+.paginator__next-link {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	text-indent: -9000px;
+}
+
+.paginator__prev-link::before,
+.paginator__next-link::before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 7px;
+	height: 7px;
+	top: 8px;
+	left: 8px;
+	border-left: 1px solid #221f1f;
+	border-bottom: 1px solid #221f1f;
+}
+
+.paginator__prev-link::before {
+	transform: translateX(-2px) rotate(45deg);
+}
+
+.paginator__next-link::before {
+	transform: translateX(-6px) rotate(-135deg);
+}
+
+.paginator__current-link {
+	pointer-events: none;
+	cursor: default;
+	color: #fff;
+	background-color: #1c5bc3;
+	border-radius: 4px;
+}
