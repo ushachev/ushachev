@@ -25,7 +25,8 @@
 .form-comment__input-txt,
 .form-comment__textarea {
 	width: 100%;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	border-radius: 3px;
 	border: 1px solid transparent;
 	outline: none;
@@ -89,7 +90,8 @@
 .form-comment__label-radio {
 	outline-offset: 2px;
 	outline: 1px dotted transparent;
-	animation: temp-bord 1s linear;
+	-webkit-animation: temp-bord 1s linear;
+	        animation: temp-bord 1s linear;
 }
 
 .form-comment__label-radio::before {
@@ -101,7 +103,6 @@
 	left: -25px;
 	border: 1px solid rgb(201, 201, 201);
 	border-radius: 50%;
-	background-image: -moz-linear-gradient( 90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
 }
@@ -115,15 +116,17 @@
 	left: -19px;
 	border: 4px solid rgb(75, 115, 181);
 	border-radius: 50%;
-	animation: impulse 0.5s cubic-bezier(.76,.25,.35,1.83) 0.1s;
+	-webkit-animation: impulse 0.5s cubic-bezier(.76,.25,.35,1.83) 0.1s;
+	        animation: impulse 0.5s cubic-bezier(.76,.25,.35,1.83) 0.1s;
 }
 
 .form-comment__input-radio:checked
 +
 .form-comment__label-radio::before {
 	border-color: rgb(75, 115, 181);
+	-webkit-transition: border-color 1s 0.5s;
+	-o-transition: border-color 1s 0.5s;
 	transition: border-color 1s 0.5s;
-	background-image: -moz-linear-gradient( -90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
 	background-image: -webkit-linear-gradient( -90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
 	background-image: -ms-linear-gradient( -90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
 }

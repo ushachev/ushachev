@@ -248,19 +248,48 @@
   animation-delay: 0.5s;
 }
 
+@-webkit-keyframes impulse {
+  20% {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+}
+
 @keyframes impulse {
   20% {
-    transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+}
+
+@-webkit-keyframes flight {
+  from {
+    -webkit-transform: scale(0.2) rotate(15deg);
+            transform: scale(0.2) rotate(15deg);
+  }
+  to {
+    top: 3px;
+    right: -105px;
   }
 }
 
 @keyframes flight {
   from {
-    transform: scale(0.2) rotate(15deg);
+    -webkit-transform: scale(0.2) rotate(15deg);
+            transform: scale(0.2) rotate(15deg);
   }
   to {
     top: 3px;
     right: -105px;
+  }
+}
+
+@-webkit-keyframes temp-bord {
+  20%, 90% {
+    outline-color: rgb(75, 115, 181);
+  }
+  100% {
+    outline-color: transparent;
   }
 }
 

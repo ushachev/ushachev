@@ -64,11 +64,15 @@
 }
 
 .paginator__prev-link::before {
-	transform: translateX(-2px) rotate(45deg);
+	-webkit-transform: translateX(-2px) rotate(45deg);
+	    -ms-transform: translateX(-2px) rotate(45deg);
+	        transform: translateX(-2px) rotate(45deg);
 }
 
 .paginator__next-link::before {
-	transform: translateX(-6px) rotate(-135deg);
+	-webkit-transform: translateX(-6px) rotate(-135deg);
+	    -ms-transform: translateX(-6px) rotate(-135deg);
+	        transform: translateX(-6px) rotate(-135deg);
 }
 
 .paginator__current-link {

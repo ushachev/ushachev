@@ -10,6 +10,8 @@
 }
 
 .btn_transition {
+	-webkit-transition: color 0.2s, background-color 0.7s;
+	-o-transition: color 0.2s, background-color 0.7s;
 	transition: color 0.2s, background-color 0.7s;
 }
 

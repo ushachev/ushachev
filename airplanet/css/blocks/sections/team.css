@@ -18,7 +18,8 @@
 	margin-left: 20px;
 	margin-bottom: 25px;
 	vertical-align: top;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -42,6 +43,8 @@
 	height: 160px;
 	background-color: #5e81bc;
 	opacity: 0.6;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
 	transition: opacity 1s;
 }
 
@@ -54,10 +57,14 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	font-size: 24px;
 	font-weight: bold;
 	color: #fff;
+	-webkit-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 }
 

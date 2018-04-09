@@ -27,16 +27,24 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	max-width: 161px;
 	max-height: 64px;
 	overflow: hidden;
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-filter: grayscale(1);
-	transition: 1s;
+	        filter: grayscale(1);
+	-webkit-transition: -webkit-filter 1s;
+	transition: -webkit-filter 1s;
+	-o-transition: filter 1s;
+	transition: filter 1s;
+	transition: filter 1s, -webkit-filter 1s;
 }
 
 .partner__logo:hover {
 	-webkit-filter: grayscale(0);
+	        filter: grayscale(0);
 }
