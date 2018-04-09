@@ -61,9 +61,9 @@
 	background-color: #fff;
 	visibility: hidden;
 	opacity: 0;
-	-webkit-transition: opacity 2s, visibility 2s;
-	-o-transition: opacity 2s, visibility 2s;
-	transition: opacity 2s, visibility 2s;
+	/*-webkit-transition: opacity 2s, visibility 2s;*/
+	/*-o-transition: opacity 2s, visibility 2s;*/
+	/*transition: opacity 2s, visibility 2s;*/
 }
 
 .contacts__timetable:hover .contacts__timetable-popup {
