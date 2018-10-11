@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#2d89ef">
-	<meta name="theme-color" content="#ffffff">
-	<!-- end favicon -->
-	<title>Тест кассы</title>
-</head>
-<body>
-	<h1>Тест кассы</h1>
-	<a href="
-		intent:#Intent;
-		action=com.bifit.cashdesk.mobile.launchfrombrowser;
-		category=android.intent.category.DEFAULT;
-		category=android.intent.category.BROWSABLE;
-		S.msg_from_browser=Launched%20from%20Browser;
-		end"
-	>Запустить БИФИТ.Касса</a>
-	<br> 
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="theme-color" content="#ffffff">
+		<!-- end favicon -->
+		<title>Тест кассы</title>
+	</head>
+	<body>
+		<h1>Тест кассы</h1>
+		<a href="
+			intent:#Intent;
+			action=com.bifit.cashdesk.mobile.launchfrombrowser;
+			category=android.intent.category.DEFAULT;
+			category=android.intent.category.BROWSABLE;
+			S.msg_from_browser=Launched%20from%20Browser;
+			end"
+		>Запустить БИФИТ.Касса</a>
+		<br>
+		<a href=" 
+			intent:#Intent;
+			action=com.bifit.cashdesk.mobile.launchfrombrowser;
+			category=android.intent.category.DEFAULT;
+			category=android.intent.category.BROWSABLE;
+			S.pin=1111;
+			S.token=9290:15389142039271350922899; 
+			S.receipt_bundle={
+				&quot;receipt&quot;:{
+					&quot;footers&quot;:[
+						&quot;FOOTER_LINE_1&quot;,
+						&quot;FOOTER_LINE_2&quot;,
+						&quot;FOOTER_LINE_3&quot;
+					],
+					&quot;headers&quot;:[
+						&quot;HEAD_LINE_1&quot;,
+						&quot;HEAD_LINE_2&quot;,
+						&quot;HEAD_LINE_3&quot;
+					],
+					&quot;cardAmount&quot;:0,
+					&quot;cashAmount&quot;:0,
+					&quot;receiptType&quot;:0,
+					&quot;emailNotificationAddress&quot;:&quot;mail@mail.ru&quot;,
+					&quot;phone NotificationAddress&quot;:&quot;79999999999&quot;
+				},
+				&quot;receiptItems&quot;:[
+					{
+						&quot;description&quot;:&quot;Товар 1&quot;,
+						&quot;price&quot;:10,
+						&quot;quantity&quot;:1,
+						&quot;vatValue&quot;:0
+					}
+				]
+			}; 
+			end"
+		>Распечатать чек в БИФИТ.Касса</a> 
+	</body>
 </html>
